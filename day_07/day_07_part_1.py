@@ -32,8 +32,6 @@ def calculate(key, wires) -> int:
 
     input = wires[key]
 
-    # print(key, input)
-
     if "NOT " in input:
         cache[key] = ~calculate(input[4:], wires)
         return cache[key]
@@ -63,13 +61,9 @@ def calculate(key, wires) -> int:
 
 
 def solve(input_data):
-    # print(input_data)
-
     wires = {}
-
     for line in input_data:
         input, assigned_to = line.split(" -> ")
-
         wires[assigned_to] = input
 
     return calculate("a", wires)
