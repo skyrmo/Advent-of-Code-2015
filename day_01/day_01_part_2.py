@@ -1,4 +1,3 @@
-import collections
 import os
 
 
@@ -24,7 +23,6 @@ def solve(input_data):
     cur_floor = 0
     result = -1
     for i, c in enumerate(input_data):
-        print(i, c)
         if c == "(":
             cur_floor += 1
         else:
