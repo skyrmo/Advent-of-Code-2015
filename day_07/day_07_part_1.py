@@ -60,6 +60,7 @@ def calculate(key, wires) -> int:
         return calculate(input, wires)
 
 
+# PLEASE NOTE, INPUT CHANGED TO COMPLETE PART TWO
 def solve(input_data):
     wires = {}
     for line in input_data:
