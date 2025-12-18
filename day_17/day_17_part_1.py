@@ -1,6 +1,4 @@
-import collections
 import os
-from functools import cache
 
 
 def parse_input(file_path):
